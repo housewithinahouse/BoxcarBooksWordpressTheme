@@ -2248,6 +2248,10 @@ Sections
 .module-about{
 	padding:0px; 
 }
+
+.module-bigbanner img{
+	width:100%;
+}
     
 .module-news{
 	padding-top:0;

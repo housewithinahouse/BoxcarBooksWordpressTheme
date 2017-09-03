@@ -211,9 +211,9 @@
 		$shop_isle_big_banners_title = get_theme_mod('shop_isle_big_banners_title');
 		
 		if ( isset($shop_isle_big_banners_hide) && $shop_isle_big_banners_hide != 1 ) {
-			echo '<section class="module-small home-banners">';
+			echo '<section class="module-small module-bigbanner">';
 		} elseif ( is_customize_preview() ) {
-			echo '<section class="module-small home-banners shop_isle_hidden_if_not_customizer">';
+			echo '<section class="module-small module-bigbanner shop_isle_hidden_if_not_customizer">';
 		}
 
 		if( ( isset($shop_isle_big_banners_hide) && $shop_isle_big_banners_hide != 1) || is_customize_preview() ) {
@@ -238,31 +238,17 @@
 						
 				if( !empty($shop_isle_big_banners_decoded) ) {
 							
-						echo '<div class="container">';
+			
 
-							if ( !empty($shop_isle_big_banners_title) ) {
-								echo '<div class="row">';
-									echo '<div class="col-sm-6 col-sm-offset-3">';
-										echo '<h2 class="module-title font-alt product-banners-title">'. $shop_isle_big_banners_title .'</h2>';
-									echo '</div>';
-								echo '</div>';
 
-							} elseif ( is_customize_preview() ) {
-								echo '<div class="row">';
-									echo '<div class="col-sm-6 col-sm-offset-3">';
-										echo '<h2 class="module-title font-alt product-banners-title shop_isle_hidden_if_not_customizer"></h2>';
-									echo '</div>';
-								echo '</div>';
-							}
-
-							echo '<div class="row shop_isle_bannerss_section">';
+							
 							
 								foreach($shop_isle_big_banners_decoded as $shop_isle_big_banner) {
 								
 									if ( !empty($shop_isle_big_banner->image_url) ) {
 									
 				
-										echo '<div class="col-sm-12"><div class="content-box mt-0 mb-0"><div class="content-box-image-no-margin">';
+										
 										
 										if ( !empty($shop_isle_big_banner->link) ) {
 											
@@ -282,15 +268,15 @@
 												echo '<a><img src="' . esc_url( $shop_isle_big_banner->image_url ) . '"></a>';
 											}	
 										}
-										echo '</div></div></div>';
+										
 									
 									}
 								
 								}
 						
-							echo '</div><!-- .shop_isle_bannerss_section -->';
 							
-						echo '</div><!-- .container -->';
+							
+
 													
 				}
 				
@@ -301,6 +287,8 @@
 
 		}	/* END BANNERS */
 
+
+		
 		/*********************************/
 		/******* Latest products *********/
 		/*********************************/
