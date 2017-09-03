@@ -1,3 +1,13 @@
+This is the 2017 Boxcar theme for Wordpress. It was built for Boxcar Books in Bloomington, IN, who's website is boxcarbooks.org. 
+
+This theme is based on Shop Isle, a GPL theme from ThemeIsle. 
+
+
+
+
+
+
+
 == Shop Isle ==
 
 Images sources:
