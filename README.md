@@ -2,6 +2,13 @@ This is the 2017 Boxcar theme for Wordpress. It was built for Boxcar Books in Bl
 
 This theme is based on Shop Isle, a GPL theme from ThemeIsle. 
 
+== Current Plans ==
+These are in no particular order. 
+- Add paralax full width banner. 
+- Make sections reararangeable
+- Create addtional text areas. 
+- Expose more controls in the customizer
+- Make a "show me all the features, including the ones that I don't really need, and I chose to hide" incasesome one comes along one day and need to be able to access that, but can't or won't edit the theme to remove that. 
 
 
 
