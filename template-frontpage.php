@@ -146,7 +146,7 @@
 		
 		if ( isset($shop_isle_news_hide) && $shop_isle_news_hide != 1 ) {
 			
-			//set args to display last two news postss
+			//set args to display last two news posts
 			$args = array(
 				'category_name' => 'news',
 				'showposts' => 2
@@ -237,11 +237,9 @@
 				$shop_isle_big_banners_decoded = json_decode($shop_isle_big_banners);
 						
 				if( !empty($shop_isle_big_banners_decoded) ) {
-							
-			
 
 
-							
+
 							
 								foreach($shop_isle_big_banners_decoded as $shop_isle_big_banner) {
 								
@@ -268,15 +266,13 @@
 												echo '<a><img src="' . esc_url( $shop_isle_big_banner->image_url ) . '"></a>';
 											}	
 										}
-										
+									
 									
 									}
 								
 								}
 						
-							
-							
-
+						
 													
 				}
 				
@@ -287,8 +283,6 @@
 
 		}	/* END BANNERS */
 
-
-		
 		/*********************************/
 		/******* Latest products *********/
 		/*********************************/
